@@ -26,3 +26,7 @@ lerna-debug.log*
 **/*.njsproj
 **/*.sln
 **/*.sw?
+
+# Ignore any .env files in any folder (frontend/.env, backend/.env)
+**/.env
+**/.env.*

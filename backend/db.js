@@ -1,6 +1,9 @@
-const mongoose = require('mongoose')
-const { boolean } = require('zod')
-mongoose.connect("mongodb+srv://tomartushar0203:12341234@cluster0.bk76dth.mongodb.net/")
+require('dotenv').config(); 
+const mongoose = require('mongoose');
+
+mongoose.connect(process.env.URL);
+
+mongoose.connect(process.env.URL)
 
 const TodoSchema=mongoose.Schema({
     Title:String,
